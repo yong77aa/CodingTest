@@ -8,5 +8,7 @@
     - https://programmers.co.kr/learn/courses/30/lessons/43163  
   1-3) 2021-03-21(일) 프로그래머스 타겟넘버 문제(Level 2)  
     - https://programmers.co.kr/learn/courses/30/lessons/43165  
-  1-4) 2021-03-24(화) 백준 바이러스 문제  
-    - https://www.acmicpc.net/problem/2606 
+  1-4) 2021-03-24(수) 백준 바이러스 문제  
+    - https://www.acmicpc.net/problem/2606   
+  1-5) 2021-03-25(목) 백준 DFS와 BFS 문제   
+    - https://www.acmicpc.net/problem/1260  
