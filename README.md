@@ -14,3 +14,5 @@
     - https://www.acmicpc.net/problem/1260
   1-6) 2021-03-26(금) 백준 단지번호붙이기 문제
     - https://www.acmicpc.net/problem/2667
+  1-7) 2021-07-12(월) 백준 요세푸스 문제(큐)
+    - https://www.acmicpc.net/problem/1158
