@@ -1,5 +1,5 @@
 def main():
-    num = int(input())
+    num = int(input())  # 반복할 횟수 입력
 
     for _ in range(num):
         size, index = list(map(int, input().split()))
