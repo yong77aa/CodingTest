@@ -5,7 +5,7 @@
 		int totalCount;//문서 갯수
 
 		int targetIndex;//특정 문서 index
-
+d
 		int count = 0;
 		
 		for(int i = 0; i<testCase; i++) {
