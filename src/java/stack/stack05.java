@@ -8,6 +8,7 @@ import java.util.Stack;
 
 public class stack05 {
     
+    //어려워서 보류
     public static void main(String[] args) throws IOException {
     
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -15,26 +16,8 @@ public class stack05 {
         Stack<Character> stack = new Stack<>();
         int num = 0;
 
-        for(int i = 0 ; i < line.length(); i++) {
-            char c = line.charAt(i);
-           if(c == '('){
-                stack.push(c);
-           }else if(c == ')'){
-               stack.pop();
-               if(stack.contains('(')){
-                   num *= 2;
-               }
-           }else if(c == '['){
-               if(line.charAt(i-1) == ')'){
-                   num + 
-               }
-               stack.push('[');
-           }else if(c == ']'){
-               stack.pop();
-               if(stack.contains('[')){
-                   num *=3;
-               }
-           }
+        for(int i = 0; i<line.length(); i++) {
+
         }
         System.out.println(num);
     }
