@@ -11,7 +11,7 @@
  2021-07-19(월) 제로 https://www.acmicpc.net/problem/10773  
  2021-07-20(화) 쇠막대기 https://www.acmicpc.net/problem/10799  
  2021-07-21(수) https://www.codeup.kr/problem.php?id=3117   
- 2021 07-22(목) 괄호의 값 https://www.codeup.kr/problem.php?id=4624
- 2021 07-23(금) 후위표기식2 https://www.acmicpc.net/problem/1935
- 2021 07-24(토) 후위표기식 https://www.acmicpc.net/problem/1918
+ 2021 07-22(목) 괄호의 값 https://www.codeup.kr/problem.php?id=4624  
+ 2021 07-23(금) 후위표기식2 https://www.acmicpc.net/problem/1935  
+ 2021 07-24(토) 후위표기식 https://www.acmicpc.net/problem/1918  
  2021 07-25(일) 
