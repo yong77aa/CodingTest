@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Stack;
 
-public class starck06 {
+public class stack06 {
     
     public static void main(String[] args) throws Exception {
         //Exception throws 꼭 해주기!!! ***** 
