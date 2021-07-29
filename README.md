@@ -14,8 +14,6 @@
  2021 07-22(목) 괄호의 값 https://www.codeup.kr/problem.php?id=4624
  2021 07-23(금) 후위표기식2 https://www.acmicpc.net/problem/1935
  2021 07-24(토) 후위표기식 https://www.acmicpc.net/problem/1918
- 2021 07-25(일) 
-
- 2021 07-26(월) ATM https://www.acmicpc.net/problem/11399
-                동전0 https://www.acmicpc.net/problem/11047
- 2021 07-27(화) 잃어버린 괄호 https://www.acmicpc.net/problem/1541
+ 2021 07-26(월) ATM https://www.acmicpc.net/problem/11399  
+                동전0 https://www.acmicpc.net/problem/11047  
+ 2021 07-27(화) 잃어버린 괄호 https://www.acmicpc.net/problem/1541  
