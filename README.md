@@ -19,3 +19,5 @@
  2021 07-26(월) ATM https://www.acmicpc.net/problem/11399
                 동전0 https://www.acmicpc.net/problem/11047
  2021 07-27(화) 잃어버린 괄호 https://www.acmicpc.net/problem/1541
+ 2021 07-28(수) https://www.acmicpc.net/problem/2217
+ 2021 08-03(월) 최소 대금 https://codeup.kr/problem.php?id=2001
