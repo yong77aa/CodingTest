@@ -21,3 +21,5 @@
  2021 07-27(화) 잃어버린 괄호 https://www.acmicpc.net/problem/1541
  2021 07-28(수) https://www.acmicpc.net/problem/2217
  2021 08-03(월) 최소 대금 https://codeup.kr/problem.php?id=2001
+ 2021 08-04(화) 리모컨 https://codeup.kr/problem.php?id=3120
+ 
