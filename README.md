@@ -23,6 +23,6 @@
  2021 08-03(월) 최소 대금 https://codeup.kr/problem.php?id=2001  
  2021 08-04(화) 리모컨 https://codeup.kr/problem.php?id=3120  
  2021 08-04(화) 거스름돈 https://codeup.kr/problem.php?id=3301  
- 2021 08-04(화) 최고의피자 https://codeup.kr/problem.php?id=3321  
+ 2021 08-11(수) 최고의피자 https://codeup.kr/problem.php?id=3321  
 
  
