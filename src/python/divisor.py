@@ -12,9 +12,8 @@ def main():
             divisors.append(int(num))  # 리스트에 몫을 넣음
 
     divisors = list(set(divisors))  # 자료형을 set 으로 바꿔서 중복을 제거하고 정렬함
-    print(divisors)
 
-    if len(divisors) == 0:
+    if len(divisors) < q:
         print(0)
     else:
         print(divisors[q-1])
