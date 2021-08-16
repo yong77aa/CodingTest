@@ -1,12 +1,12 @@
 # CodingTest
 
-###열심히 살자  
+### 열심히 살자  
 
 곧 있을 코딩테스트 준비를 위해 참고할 블로그  
 https://covenant.tistory.com/224  
 위 블로그 순서대로 코딩테스트 문제 풀어보기
 
- - 2021-07 
+ - ### 2021-07 
    1. 백준 요세푸스 문제(큐) : https://www.acmicpc.net/problem/1158 *(12일)*
    2. 프린터 큐 문제(큐) : https://www.acmicpc.net/problem/1966 *(13일)*
    3. 카드2 :  https://www.acmicpc.net/problem/2164 *(14일)*
@@ -24,7 +24,7 @@ https://covenant.tistory.com/224
    15. https://www.acmicpc.net/problem/2217 *(28일)*  
     
 
- - 2021-08 
+ - ### 2021-08 
    1. 최소 대금 : https://codeup.kr/problem.php?id=2001 *(3일)*
    2. 리모컨 : https://codeup.kr/problem.php?id=3120 *(4일)*
    3. 거스름돈 : https://codeup.kr/problem.php?id=3301 *(4일)*
