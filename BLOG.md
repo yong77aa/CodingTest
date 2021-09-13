@@ -11,9 +11,11 @@
    3. 한국투자증권 (~2021.09.28 화 17:00)
       - https://kis-talkon2021.com/
    4. 삼성 SDS (~2021.09.13 월 17:00)
-      - http://www.samsungcareers.com/rec/apply/ComResumeServlet?cmd=pstMain#
+      - http://www.samsungcareers.com/rec/apply/ComResumeServlet?cmd=pstMain# (마감)
    5. 네이버 (~2021.09.20 월 18:00)
       - https://recruit.navercorp.com/naver/job/detail/developer?annoId=20006485&classId=&jobId=&entTypeCd=&searchTxt=&searchSysComCd=KR
+   6. 신한은행 (~2021.09.23 목 18:00)
+      - https://shinhan.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=70178
    
 
 - ### 준비운동 PART 1
