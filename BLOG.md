@@ -5,16 +5,16 @@
 
 - ### 채용
 
-  1.  ~~신한DS (~2021.08.26 목 자정) ~~
+  1.  ~~신한DS (~2021.08.26 목 자정)
       - https://shinhands.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=67100 (마감)
-  2.  ~~한국투자증권 (~2021.09.28 화 17:00)~~
+  2.  ~~한국투자증권 (~2021.09.28 화 17:00)
       - https://kis-talkon2021.com/
-  3.  ~~삼성 SDS (~2021.09.13 월 17:00)~~
+  3.  ~~삼성 SDS (~2021.09.13 월 17:00)
       - http://www.samsungcareers.com/rec/apply/ComResumeServlet?cmd=pstMain# (마감)
-  4.  ~~네이버 (~2021.09.20 월 18:00)~~
+  4.  ~~네이버 (~2021.09.20 월 18:00)
       - https://recruit.navercorp.com/naver/job/detail/developer?annoId=20006485&classId=&jobId=&entTypeCd=&searchTxt=&searchSysComCd=KR
       - https://recruit.navercorp.com/naver/job/detail/developer?annoId=20006519&classId=&jobId=&entTypeCd=&searchTxt=&searchSysComCd=
-  5.  ~~신한은행 (~2021.09.23 목 18:00)~~
+  5.  ~~신한은행 (~2021.09.23 목 18:00)
       - https://shinhan.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=70178
   6.  DB 그룹 (~2021.10.07 목 17:00)
       - https://dbgroup.recruiter.co.kr/app/jobnotice/list
