@@ -1,0 +1,287 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch greedy01",
+            "request": "launch",
+            "mainClass": "test.greedy.greedy01",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch greedy02",
+            "request": "launch",
+            "mainClass": "test.greedy.greedy02",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch greedy03",
+            "request": "launch",
+            "mainClass": "test.greedy.greedy03",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch greedy04",
+            "request": "launch",
+            "mainClass": "test.greedy.greedy04",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch greedy05",
+            "request": "launch",
+            "mainClass": "test.greedy.greedy05",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch greedy06",
+            "request": "launch",
+            "mainClass": "test.greedy.greedy06",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch greedy07",
+            "request": "launch",
+            "mainClass": "test.greedy.greedy07",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch queue01",
+            "request": "launch",
+            "mainClass": "test.queue.queue01",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch queue02",
+            "request": "launch",
+            "mainClass": "test.queue.queue02",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch queue03",
+            "request": "launch",
+            "mainClass": "test.queue.queue03",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch queue04",
+            "request": "launch",
+            "mainClass": "test.queue.queue04",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch recursion",
+            "request": "launch",
+            "mainClass": "test.recursiveCall.recursion",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack01",
+            "request": "launch",
+            "mainClass": "test.stack.stack01",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack02",
+            "request": "launch",
+            "mainClass": "test.stack.stack02",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack03",
+            "request": "launch",
+            "mainClass": "test.stack.stack03",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack04",
+            "request": "launch",
+            "mainClass": "test.stack.stack04",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack05",
+            "request": "launch",
+            "mainClass": "test.stack.stack05",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack06",
+            "request": "launch",
+            "mainClass": "test.stack.stack06",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch stack07",
+            "request": "launch",
+            "mainClass": "test.stack.stack07",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch URLD",
+            "request": "launch",
+            "mainClass": "test.warmingup.URLD",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch addNum",
+            "request": "launch",
+            "mainClass": "test.warmingup.addNum",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch adventure",
+            "request": "launch",
+            "mainClass": "test.warmingup.adventure",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch candy",
+            "request": "launch",
+            "mainClass": "test.warmingup.candy",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch makeone",
+            "request": "launch",
+            "mainClass": "test.warmingup.makeone",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch maxnum",
+            "request": "launch",
+            "mainClass": "test.warmingup.maxnum",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup01",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup01",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup02",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup02",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup03",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup03",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup04",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup04",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup05",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup05",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup06",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup06",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup07",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup07",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup08",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup08",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup09",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup09",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup10",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup10",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup11",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup11",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup12",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup12",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup13",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup13",
+            "projectName": "CodingTest-1_247f12d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch warmingup14",
+            "request": "launch",
+            "mainClass": "test.warmingup.warmingup14",
+            "projectName": "CodingTest-1_247f12d9"
+        }
+    ]
+}

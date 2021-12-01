@@ -15,11 +15,13 @@ public class icecream {
         n = sc.nextInt();
         // 가로길이
         m = sc.nextInt();
+        
+        sc.nextLine();
 
         // 그래프 만들기
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < n; i++) {
             String s = sc.nextLine();
-            for (int j = 0; j < s.length(); j++) {
+            for (int j = 0; j <m; j++) {
                 graph[i][j] = s.charAt(j) - '0';
             }
         }
@@ -28,7 +30,6 @@ public class icecream {
         // 모든 노드에서 dfs를 해야하니까.. for문으로
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                System.out.println("처음for 문 " + " i == " + i + " j == " + j);
                 if (dfs(i, j)) {
                     result++;
                 }
@@ -40,7 +41,6 @@ public class icecream {
     }
 
     public static boolean dfs(int x, int y) {
-        System.out.println("dfs 시작 x = " + x + " y = " + y);
         if (x < 0 || x >= n || y < 0 || y >= m) {
             return false;
         }
