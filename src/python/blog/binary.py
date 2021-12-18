@@ -6,7 +6,7 @@ import math
 
 def main():
     num = int(input())
-    test_case = []
+    test_case = [] # 테스트 케이스
 
     for i in range(num):
         temp = int(input())
