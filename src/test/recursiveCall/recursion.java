@@ -1,23 +1,24 @@
-package recursiveCall;
+package test.recursiveCall;
 
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-public class recursion{
+public class recursion {
     static int n;
-    public static void main(String[] args) throws Exception{
-        
+
+    public static void main(String[] args) throws Exception {
+
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(bf.readLine());
         print(1);
-        
+
     }
 
-    public static void print(int num){
-        if(num <= n){
+    public static void print(int num) {
+        if (num <= n) {
             System.out.println(num);
-            print(num+1);
-            
+            print(num + 1);
+
         }
     }
 }
