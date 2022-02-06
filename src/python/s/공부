@@ -1,0 +1,6 @@
+DFS : Stack, 재귀 함수를 사용해 depth 기준 탐색
+BFS : Queue, While 문을 사용해 breadth 기준 탐색
+
+rstrip -> 오른쪽 공백 제거
+lstrip -> 왼쪽 공백 제거
+strip -> 왼쪽 오른쪽 공백 제거
