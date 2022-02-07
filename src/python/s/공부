@@ -1,6 +1,16 @@
-DFS : Stack, 재귀 함수를 사용해 depth 기준 탐색
-BFS : Queue, While 문을 사용해 breadth 기준 탐색
+* DFS, BFS 란?
+DFS : Stack, 재귀 함수를 사용해 depth 기준 탐색 - 한 루트를 반복함
+BFS : Queue, While 문을 사용해 breadth 기준 탐색 - 한 노드에서 갈 수 있는 모든 노드를 탐색함
 
+* DFS, BFS의 선택 기준은?
+DFS: 모든 경우를 하나하나 전부 탐색해야 하는 완전탐색 문제 (조합, 순열, ..)
+BFS: 깊이 특징을 이용한 문제 (최단경로, ..)
+
+* Queue 생성
+from collections import deque
+queue = deque([list])
+
+* 공백 제거
 rstrip -> 오른쪽 공백 제거
 lstrip -> 왼쪽 공백 제거
 strip -> 왼쪽 오른쪽 공백 제거
