@@ -1,28 +1,37 @@
 function solution(p) {
-    var answer = '';
-    
-    if(p === '') return answer;
+    let str = "";
+    if(p === '') return str;
     let v = p.split("")
     recursion(v)
-    return answer;
+    
+    
+    function recursion(v){
+        if(v.length == 0){
+            return
+        }
+
+        let a = v.shift()
+        let u = [a]
+        let count = a === '(' ? 1 : -1
+
+        while(count != 0 && v.length > 0){
+            let b = v.shift()
+            b === '(' ? count++ : count--
+            u.push(b)
+        }
+
+        if(u[0] != "("){
+             u = u.map((i)=>{
+            return i === "(" ? ")" : i === ")" ? "(" : ""
+            })
+            u[0] = "("
+            u[u.length-1] = ")"
+        }
+        str += u.join("")
+        recursion(v)
+    }
+    
+ 
+    return str;
 }
 
-function recursion(v,str){
-    if(v.length < 2){
-        return
-    }
-    
-    let a = v.shift()
-    let u = [a]
-    let count = a === '(' ? 1 : -1
-    
-    while(count != 0 && v.length > 0){
-        let b = v.shift()
-        b === '(' ? count++ : count--
-        u.push(b)
-    }
-    
-    //올바른 문자열 인지 체크하는 로직 추가(stack)
-    
-    recursion(v)
-}
