@@ -14,3 +14,10 @@ queue = deque([list])
 rstrip -> 오른쪽 공백 제거
 lstrip -> 왼쪽 공백 제거
 strip -> 왼쪽 오른쪽 공백 제거
+
+* 리스트 for문 한줄에 작성
+[결과 for 반복문]
+ex) [list(stdin.readline()) for _ in range(n)] -> 결과를 반복해 리스트 생성
+
+* if not
+if not x -> x가 False, 0, 빈 리스트, 빈 튜플, 빈 딕셔너리, "", None, 등등 인 경우 True 반환

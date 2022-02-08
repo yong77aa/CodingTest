@@ -1,13 +1,13 @@
-# 세로 N, 가로 M, 1x1
 # 빨강, 파랑 구슬 -> 빨강 구슬 빼내기
-# 보드의 상태가 주어졌을 때, 최소 빨간 구슬
 # 빨간 구슬을 빼내기 위해 움직인 횟수, 10번 이하 및 파란 구슬이 빠지는 경우 -1
 # 최단 경로를 찾아야 하는거니까, DFS 보다는 BFS를 사용해서 풀어보자
 
 from sys import stdin
 from collections import deque
 
+# 세로 n, 가로 m
 n, m = map(int, stdin.readline().split())
+# 그래프 상태 저장
 graph = [list(stdin.readline()) for _ in range(n)]
 
 # 각 구슬 위치 저장
@@ -35,8 +35,8 @@ def movemove(x, y, dx, dy):
 def bfs():
     # 빨간 구슬과 파란 구슬 동시에 방문체크 해야함
     visit = {}
-    queue = deque([red + blue])
-    visit[red[0], red[1], blue[0], blue[1]] = 0
+    queue = deque([red + blue])  # 공의 위치를 저장하기 위한 변수
+    visit[red[0], red[1], blue[0], blue[1]] = 0  # 방문 여부
     while queue:
         rx, ry, bx, by = queue.popleft()  # 공의 위치를 하나 꺼내서 그 위치를 기준으로 다시 이동함
         for dx, dy in (-1, 0), (1, 0), (0, -1), (0, 1):  # 상, 하, 좌, 우
@@ -44,6 +44,7 @@ def bfs():
             nbx, nby, bmove = movemove(bx, by, dx, dy)
 
             # 두 공 모두 또는 파란 공만 탈출한 경우
+            # 파이썬 not 은 null이거나 0을 의미함
             if not nbx and not nby:
                 continue
 
@@ -64,13 +65,12 @@ def bfs():
 
             # 해당 위치가 방문된 것이 아니면, 방문 된 것으로 저장
             if (nrx, nry, nbx, nby) not in visit:
-                visit[nrx, nry, nbx, nby] = visit[rx, ry, bx, by] + 1  # 지금까지 움직였던 횟수에 +1 해서 저장함
+                visit[nrx, nry, nbx, nby] = visit[rx, ry, bx, by] + 1  # 새로 이동한 위치를 지금까지 움직였던 횟수에 +1 해서 저장함
                 queue.append([nrx, nry, nbx, nby])  # 구슬들의 위치를 저장
 
         # answer에 값을 넣었거나 queue가 비었거나 움직인 횟수가 10이상이면 그만
         if not queue or visit[rx, ry, bx, by] >= 10:
             print(-1)
             return
-
 
 bfs()
