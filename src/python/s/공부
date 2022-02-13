@@ -11,17 +11,27 @@ from collections import deque
 queue = deque([list])
 
 * 공백 제거
-rstrip -> 오른쪽 공백 제거
-lstrip -> 왼쪽 공백 제거
-strip -> 왼쪽 오른쪽 공백 제거
+rstrip: 오른쪽 공백 제거
+lstrip: 왼쪽 공백 제거
+strip: 왼쪽 오른쪽 공백 제거
 
 * 리스트 for문 한줄에 작성
 [결과 for 반복문]
-ex) [list(stdin.readline()) for _ in range(n)] -> 결과를 반복해 리스트 생성
+ex) [list(stdin.readline()) for _ in range(n)]: 결과를 반복해 리스트 생성
 
 * if not
-if not x -> x가 False, 0, 빈 리스트, 빈 튜플, 빈 딕셔너리, "", None, 등등 인 경우 True 반환
+if not x: x가 False, 0, 빈 리스트, 빈 튜플, 빈 딕셔너리, "", None, 등등 인 경우 True 반환
 
 * 문자열 입력 관련
 import sys
 sys.stdin.readline().rstrip()
+
+* 파이썬의 얕은 복사와 깊은 복사
+얕은 복사: a를 변경하면 b도 변경됨 (같은 메모리 주소를 바라보고 있음), copy 메소드도 얕은 복사에 해당함
+깊은 복사: a를 변경해도 b는 변경되지 않음 -> copy.deepcopy를 사용함
+
+* python 반복문 range
+range(a1, a2, a3) 인 경우
+a1: 시작범위 (0은 생략가능)
+a2: 마지막 범위 (지정된 숫자 바로앞까지 실행)
+a3: 간격 (생략하면 기본 값 1)
