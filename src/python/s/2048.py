@@ -37,16 +37,37 @@ def move(board, direction):
         for j in range(size):
             top = size - 1  # 위에서 아래로 가는거니까 가장 큰 값에서 값을 하나씩 줄여나감
             for i in range(size - 2, -1, -1):  # 시작범위, 마지막범위, 이동 값
-                temp = board[i][j]
-                board[i][j] = 0
+                if board[i][j]:
+                    temp = board[i][j]
+                    board[i][j] = 0
 
-                if board[top][j] == 0:
-                    board[top][j] = temp
-                elif board[top][j] == temp:
-                    board[top][j] = temp * 2
+                    if board[top][j] == 0:
+                        board[top][j] = temp
+                    elif board[top][j] == temp:
+                        board[top][j] = temp * 2
+                        top += 1
+                    else:
+                        top += 1
+                        board[top][j] = temp
 
 
+    # 위, 아래와 다르게 배열 인덱스를 반대로 시작함
     elif direction == '2':  # 좌
+        for i in range(size):
+            index = 0
+            for j in range(1, size):
+                if board[i][j]:
+                    temp = board[i][j]
+                    board[i][j] = 0
+
+                    if board[i][index] == 0:
+                        board[i][index] = temp
+                    elif board[i][index] == temp:
+                        board[i][index] = temp * 2
+                        index += 1
+                    else:
+                        index += 1
+                        board[i][index] = temp
 
     elif direction == '3':  # 우
 
