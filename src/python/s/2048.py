@@ -21,7 +21,7 @@ def move(direction):
         for j in range(size):
             top = 0
             for i in range(1, size):
-                if board[i][j]:
+                if board[i][j]:  # i=1, j=0에서 시작
                     temp = board[i][j]  # 해당 값을 변수에 저장하고
                     board[i][j] = 0  # 그 자리의 값을 0으로 변경
 
@@ -93,13 +93,13 @@ def dfs(count):
     if count == 5:
         for i in range(size):
             result = max(result, max(board[i]))
-            return
+        return
 
-    temp = copy.deepcopy(board)
+    tmp = copy.deepcopy(board)  # 모든 경우를 해보기 위해 배열을 깊은복사 해야함
     for i in range(4):
         move(i)
         dfs(count + 1)
-        board = copy.deepcopy(temp)
+        board = copy.deepcopy(tmp)
 
 dfs(0)
 print(result)
