@@ -30,8 +30,12 @@ sys.stdin.readline().rstrip()
 얕은 복사: a를 변경하면 b도 변경됨 (같은 메모리 주소를 바라보고 있음), copy 메소드도 얕은 복사에 해당함
 깊은 복사: a를 변경해도 b는 변경되지 않음 -> copy.deepcopy를 사용함
 
-* python 반복문 range
+* 반복문 range
 range(a1, a2, a3) 인 경우
 a1: 시작범위 (0은 생략가능)
 a2: 마지막 범위 (지정된 숫자 바로앞까지 실행)
 a3: 간격 (생략하면 기본 값 1)
+
+* 빈 배열 만들기
+arr = [0 for _ in range(n)]: 일차원 배열
+arr = [[0] * n for _ in range(n)]: 이차원 배열
