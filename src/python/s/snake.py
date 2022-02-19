@@ -40,14 +40,14 @@ snake = deque([[0, 0]])  # 최초 뱀의 위치
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
-now_direction = 1  # 시작방향 동쪽
-x, y = 0, 0  # 뱀의 머리 위치
+now_direction = 1  # 시작 방향 동쪽
 time = 0  # 게임 진행 시간
+x, y = 0, 0  # 뱀의 머리 위치
 
 while True:
     time += 1
     x += dx[now_direction]
-    y += dx[now_direction]
+    y += dy[now_direction]
 
     if time in change.keys():
         direction_change(change[time])  # 방향 전환
@@ -55,7 +55,7 @@ while True:
     if 0 <= x and x < n and 0 <= y and y < n:
         # 게임판 범위 안
         if [x, y] in snake:
-            # 몸에 부딛힌 경우
+            # 몸에 부딪힌 경우
             break
 
         if arr[x][y] == 1:
