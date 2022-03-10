@@ -1,21 +1,19 @@
 n = int(input())  # 남은 일수 N
-arr = [list(map(int, input().split())) for _ in range(n)]
-total_pay = 0  # 수익
+t, p = [], []  # 상담을 완료하는데 걸리는 기간 t, 금액 p
 
-index = 0  # 상담 종료일
-total = 0  # 수익
+for _ in range(n):
+    T, P = map(int, input().split())
+    t.append(t)
+    p.append(p)
 
-for i, val in enumerate(arr):
-    if i == 0 or i == index:
-        index = val[0] + i  # 상담 종료일 저장
-        if index > n:
-            # 상담 종료일이 퇴사일보다 길어지는 경우
-            break
-        else:
-            # 상담 종료일이 퇴사일보다 안쪽인 경우
-            total += val[1]
+d = [0] * (n+1)
+
+for i in range(n - 1, -1, -1):
+    if i + T[i] > n:
+        # i일에 상담하는 것이 퇴사일을 넘기면 상담 X
+        d[i] = d[i+1]
     else:
-        # 상담 종료일이 아닌 경우
-        continue
+        # 상담을 하는것과 안하는 것 중 선택
+        d[i] = max(d[i+1], p[i] + d[i + T[i])
 
-print(total)
+print(d[0])
