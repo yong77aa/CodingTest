@@ -8,6 +8,7 @@ result = 0  # 결과 값
 dx = [1, -1, 0, 0]
 dy = [0, 0, -1, 1]
 
+
 # 방향 탐색 및 값 이동부
 def dfs(x, y, idx, total):
     global result
