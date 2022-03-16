@@ -48,5 +48,6 @@ while True:
         if arr[mx][my] == 1 or mx < 0 or my < 0:
             # 뒤쪽 방향이 벽이라 후진도 할 수 없으면
             break
+            .
 
 print(result)
