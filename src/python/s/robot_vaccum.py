@@ -11,6 +11,18 @@ result = 0
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
+# 방향 전환
+def change_direction(d):
+    if d == 0:
+        return 3
+    elif d == 1:
+        return 0
+    elif d == 2:
+        return 1
+    else:
+        return 2
+
+
 # 청소기 이동
 while True:
     if cleaned[r][c] == 0:
@@ -18,26 +30,22 @@ while True:
         cleaned[r][c] = 1  # 현재 위치 청소
         result += 1
 
+    d = change_direction(d)  # 청소한 뒤 왼쪽으로 방향 전환
+
+    # 전환한 방향으로 좌표 이동
     mx = r + dx[d]
     my = c + dy[d]
 
     if cleaned[mx][my] == 0 and arr[mx][my] != 1:
         # 벽이 아니고, 청소하지 않은 공간인 경우
-        r, c = mx, my  # 좌표 이동
+        r, c = mx, my  # 1칸 전진
         cleaned[mx][my] = 1  # 청소
         result += 1
 
-    elif cleaned[mx][my] == 1 and arr[mx][my] != 1:
+    elif cleaned[mx][my] == 1 or arr[mx][my] == 1:
         # 청소할 공간이 없고, 벽이 아닌 경우
         # 왼쪽 방향으로 회전
-        if d == 0:
-            d = 3
-        elif d == 1:
-            d = 0
-        elif d == 2:
-            d == 1
-        else:
-            d == 2
+        d = change_direction(d)
 
     elif (cleaned[r+dx[0]][c+dy[0]] == 1 and cleaned[r+dx[1]][c+dy[1]] == 1 and cleaned[r+dx[2]][c+dy[2]] == 1 and cleaned[r+dx[3]][c+dy[3]] == 1) or (arr[r+dx[0]][c+dy[0]] == 1 and arr[r+dx[0]][c+dy[0]] == 1 and arr[r+dx[0]][c+dy[0]] == 1 and arr[r+dx[0]][c+dy[0]] == 1):
         # 네 방향 모두 청소가 되어있거나 벽인 경우
