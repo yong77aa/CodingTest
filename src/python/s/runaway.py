@@ -21,7 +21,7 @@ for i in range(n):
                 # 두 칸의 차이가 1인 경우 (경사로 설치)
                 diff = arr[j][i] - arr[j+1][i]  # 차이
 
-                if diff == -1 and j+1+l <= n:
+                if diff == 1 and j+1+l <= n:
                     # 높은 경사에서 낮은 경사로 가는 경우
                     # 1. 낮은 칸과 높은 카의 차이가 1이 아닌 경우 확인
                     # 2. 범위 안에 들어가는 경우 확인
@@ -39,7 +39,7 @@ for i in range(n):
                         # 경사로 설치가 가능한 경우, 해당 위치는 설치한 것으로 수정
                         check[k] = 1
 
-                elif diff == 1 and j+1-l >= 0:
+                elif diff == -1 and j+1-l >= 0:
                     # 낮은 경사에서 높은 경사로 가는 경우
                     # 1. 낮은 칸과 높은 카의 차이가 1이 아닌 경우 확인
                     # 2. 범위 안에 들어가는 경우 확인
@@ -55,6 +55,10 @@ for i in range(n):
 
                     for k in range(j+1-l, j+1):
                         check[k] = 1
+
+                else:
+                    bool = False
+                    break
 
     if bool:
         print("세로 가능: " + str(i) + " ")
