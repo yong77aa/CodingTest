@@ -26,40 +26,31 @@ def rotate(num, direction):
                 gears[num-1][i] = copy_gear[i-1]
 
 # 왼쪽 톱니바퀴 체크
-def check_left(num, direction):
+def check_left(start, direction):
     global gears
 
-    if num != 1:
-        # 맨 왼쪽 톱니바퀴는 왼쪽을 체크하지 않음
-        if gears[num-1][6] != gears[num-2][3]:
-            # 다른 극인 경우
-            if direction == 1:
-                # 원래 톱니바퀴가 시계 방향으로 회전
-                rotate(-1, gears[num-2])  # 반시계 방향으로 회전
-            else:
-                # 반시계
-                rotate(1, gears[num-2])
+    if start != 1 or gears[start][6] != gears[start-1][2]:
+        if gears[start-1][6] != gears[start][2]:
+            check_left(start - 1, -direction)
+            rotate(direction, gears[start-2])  # 회전
 
 # 오른쪽 톱니바퀴 체크
-def check_right(num, direction):
+def check_right(start, direction):
     global gears
 
-    if num != 4:
-        # 맨 오른쪽 톱니바퀴는 오른쪽을 체크하지 않음
-        if gears[num-1][2] != gears[num][6]:
-            # 다른 극인 경우
-            if direction == 1:
-                # 원래 톱니바퀴가 시계 방향으로 회전
-                rotate(-1, gears[num])
-            else:
-                # 반시계
-                rotate(1, gears[num])
+    if start != 4 or gears[start+1][6] != gears[start][2]:
+        if gears[start+1][2] != gears[start][6]:
+            # 인접한 톱니바퀴가 회전 가능
+            check_right(start+1, -direction)
+            rotate(direction, gears[start])  # 회전
 
 # 각 톱니바퀴 점수의 합
 def cal_result():
     global gears, result
 
     for index, val in enumerate(gears):
+        print("톱니바퀴 결과 : ", val)
+        # index: 톱니바퀴 번호
         if index == 0:
             if val[0] == 1:
                 result += 1
@@ -73,25 +64,21 @@ def cal_result():
             if val[0] == 1:
                 result += 8
 
-        print(val)
-        print(result)
 
-
-# 초반 값 입력부
 gears = [list(map(int, input())) for _ in range(4)]
 k = int(input())
 rotate_info = [list(map(int, input().split())) for _ in range(k)]  # 회전시킨 톱니바퀴 번호/ 1: 시계, 2: 반시계
 result = 0
 
-print(rotate_info)
-
 for i in rotate_info:
+    # 왼쪽 체크
+    check_left(i[0], -i[1])
+    # 오른쪽 체크
+    check_right(i[0], -i[1])
     # 회전
     rotate(i[0], i[1])
-    # 왼쪽 체크
-    check_left(i[0], i[1])
-    # 오른쪽 체크
-    check_right(i[0], i[1])
 
+
+# 결과 계산
 cal_result()
-print(result)
+print("결과: ", result)
