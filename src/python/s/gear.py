@@ -86,8 +86,11 @@ result = 0
 print(rotate_info)
 
 for i in rotate_info:
+    # 회전
     rotate(i[0], i[1])
+    # 왼쪽 체크
     check_left(i[0], i[1])
+    # 오른쪽 체크
     check_right(i[0], i[1])
 
 cal_result()
