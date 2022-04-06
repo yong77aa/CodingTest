@@ -17,22 +17,38 @@
 
 function solution(expression) {
     var answer = 0;
-    console.log(expression.split(/\D/))
+    let arr = expression.split(/(\D)/)  
     const operator = (a,b,mark) => {
+        a = parseInt(a)
+        b = parseInt(b)
+        console.log(`operator a is ${a}, b is ${b} mark is ${mark}`)
         switch(mark){
             case "+" : return a + b
             case "-" : return a - b
             case "*" : return a * b
         }
     }
-    
     const priority = [
-    ["+","-","*"], ["+","*","-"],["-","+","*"],["-","*","+"],["*","+","-"],["*","-","+"]
-    ]
+                        ["+","-","*"], 
+                        ["+","*","-"],
+                        ["-","+","*"],
+                        ["-","*","+"],
+                        ["*","+","-"],
+                        ["*","-","+"]
+                    ]
+    const resultArr = [];
     priority.forEach((item) => {
+        let tempArr = [...arr]
         item.forEach((i) => {
-            
+            console.log('i==' + i)
+            while(tempArr.includes(i) > 0){
+                const newNum = operator(tempArr[tempArr.indexOf(i)-1], tempArr[tempArr.indexOf(i)+1], i)
+                tempArr.splice(tempArr.indexOf(i)-1,3,newNum)
+            }
         })
+        resultArr.push(Math.abs(tempArr[0]))
     })
-    return answer;
+ 
+    resultArr.sort((a,b) => b-a)
+    return resultArr[0];
 }
