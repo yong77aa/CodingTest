@@ -17,12 +17,22 @@
 
 function solution(expression) {
     var answer = 0;
-    //1. + - * 으로 구할 수 있는 모든 우선순위 배열 만들기
+    console.log(expression.split(/\D/))
+    const operator = (a,b,mark) => {
+        switch(mark){
+            case "+" : return a + b
+            case "-" : return a - b
+            case "*" : return a * b
+        }
+    }
+    
     const priority = [
-        ["+","-","*"], ["+","*","-"],["-","+","*"],["-","*","+"],["*","+","-"],["*","-","+"]
+    ["+","-","*"], ["+","*","-"],["-","+","*"],["-","*","+"],["*","+","-"],["*","-","+"]
     ]
-
-   
-
+    priority.forEach((item) => {
+        item.forEach((i) => {
+            
+        })
+    })
     return answer;
 }
