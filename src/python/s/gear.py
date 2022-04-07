@@ -30,19 +30,16 @@ def check_left(start, direction):
     global gears
 
     if start != 1 or gears[start][6] != gears[start-1][2]:
-        if gears[start-1][6] != gears[start][2]:
-            check_left(start - 1, -direction)
-            rotate(direction, gears[start-2])  # 회전
+        rotate(direction, gears[start-2])  # 회전
+        check_left(start-1, -direction)
 
 # 오른쪽 톱니바퀴 체크
 def check_right(start, direction):
     global gears
 
-    if start != 4 or gears[start+1][6] != gears[start][2]:
-        if gears[start+1][2] != gears[start][6]:
-            # 인접한 톱니바퀴가 회전 가능
-            check_right(start+1, -direction)
-            rotate(direction, gears[start])  # 회전
+    if start != 4 or gears[start][2] != gears[start+1][6]:
+        rotate(direction, gears[start])  # 회전
+        check_right(start+1, -direction)
 
 # 각 톱니바퀴 점수의 합
 def cal_result():
