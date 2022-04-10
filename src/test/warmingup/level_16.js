@@ -1,24 +1,29 @@
 function solution(s) {
     let answer = [];
     let newArr = [];
-    const str = s.split("").forEach((item) => {  
-        if(item == "{"){
-            item = "["
-        }else if(item == "}"){
-            item = "]"
-        }
-        newArr.push(item)
+    let tempArr = []
+    const str = s.split(",").forEach((item, index) => { 
+        console.log(item)
+        // if(index != 0 && index != s.split("").length -1){
+        //     if(item != "{" && item != "}" && item != ","){
+        //         tempArr.push(item * 1)
+        //     }else if(item == "}"){
+        //         let newTempArr = [...tempArr]
+        //         newArr.push(newTempArr)
+        //         tempArr = [];
+        //     }
+        // }
     })
-   
-    newArr = newArr.join("")
     
-    console.log(Array.from(newArr))
+   const lengthArr = newArr.reduce((acc,item,index) => {
+        return acc.concat(item.length)
+   },[])
+  
     // newArr.forEach((item) => {
     //     if(item.length === 1){
     //         answer.shift(item)
     //     }
     // })
     
-    console.log(answer)
     return answer;
 }
