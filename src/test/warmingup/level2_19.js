@@ -10,25 +10,36 @@ function solution(info, query) {
        return item.split(" ");
     })
     
+    const booleanArr = [];
+    
     queryArr.forEach((conditions) => {
-        let isSatisfied = false;
+        
+        console.log('conditions == ' + conditions)
         let count = 0;
-        conditions.forEach((condition, index) => {
-            tempArr.forEach((personItem, personIndex) => {
-                if(index === condition.length -1){
-                   personItem[index] <= condition[condition.length - 1] ? isSatisfied = true : isSatisfied = false
-                    //console.log(isSatisfied)
-                }else if(index < condition.length - 1){
-                    personItem.indexOf(condition) ? isSatisfied = true : isSatisfied = false;   
-                   // console.log(isSatisfied)
+        tempArr.forEach((personItem, personIndex) => {
+            let isSatisfied = true
+            personItem.forEach((personCondition, index) => {
+                console.log('conditions[index] == ' + conditions[index] + 'personCondition == ' + personCondition)
+                if(personItem.length -1 === index && isSatisfied){
+                    conditions[index] <= personCondition ? isSatisfied = true : isSatisfied = false
+                    console.log('conditions[index] <= personCondition ' + conditions[index] <= personCondition )
+                    //if(isSatisfied) count++;
+                }else if(isSatisfied && conditions[index] !== '-'){
+                    personCondition === conditions[index] ? isSatisfied = true : isSatisfied = false
                 }
-                
+                //console.log(conditions[index])
+                // conditions.forEach((condition, index) => {
+                // //조건 하나 씩
+                //     console.log('personConditioin == ' + personCondition + 'condition == ' + condition)
+                // })
             })
-          isSatisfied ? count++ : ''
+            console.log('isSatisfied == ' + isSatisfied)
+           isSatisfied ? count++ : ''
+            
         })
-          arr.push(count)
+        
+        arr.push(count)
     })
     console.log(arr)
-    
-    return answer;
+    return arr;
 }
