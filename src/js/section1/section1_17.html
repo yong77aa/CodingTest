@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+                let answer;
+                //reduce 버전
+                // answer = s.reduce((acc,item,index,arr) =>{
+                //     if(!acc.includes(item)) acc.push(item)
+                //    return acc
+                // },[])
+
+                //filter 버전
+                answer = s.filter((item,index) => {
+                    return s.indexOf(item) === index
+                })
+                return answer
+            }
+            let str=["good", "time", "good", "time", "student"];
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
