@@ -1,17 +1,17 @@
-#  dp(dynamic programming)
-
-def dfs(num):
-    if num == 1:
+def sol(val):
+    if val == 1:
         return 1
-    elif num == 2:
+    elif val == 2:
         return 2
-    elif num == 3:
+    elif val == 3:
         return 4
     else:
-        return dfs(num-1) + dfs(num-2) + dfs(num-3)
+        return sol(val-3) + sol(val-2) + sol(val-1)
 
 
-n = int(input())  # 테스트케이스 개수
-for i in range(n):
-    a = int(input())
-    print(dfs(a))
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(n):
+        target = int(input())
+        result = sol(target)
+        print(result)
