@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                let answer=[];
+                let pos = -1
+                let pos2 = -1
+                for(let i = 0 ; i < arr.length; i++){
+                    if(arr[i] > arr[i+1]) {
+                        pos = i+1
+                        break; //맨앞에서 한거면 현수 (짝보다 작은데 앞에서 서고 싶었으니까 break)
+                    }
+                }
+                for(let i = arr.length -1; i>=1; i--){
+                    if(arr[i] < arr[i-1]){
+                        pos2 = i+1; //뒤에서 한거면 짝꿍 (작은데 뒤에 섰으니까 뒤에서부터 하고 break)
+                        break;
+                    }   
+                }
+                answer = [pos, pos2]
+                return answer
+            }
+           
+            let arr=[120, 125, 152, 130, 135, 135, 143, 127, 160];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
