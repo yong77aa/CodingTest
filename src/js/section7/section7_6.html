@@ -1,3 +1,4 @@
+<!-- 내가 푼 방법 -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -22,6 +23,37 @@
                     }   
                 }
                 answer = [pos, pos2]
+                return answer
+            }
+           
+            let tempArr=[120, 125, 152, 130, 135, 135, 143, 127, 160];
+            console.log(solution(tempArr));
+        </script>
+    </body>
+</html>
+
+<!-- 강의에서 푼 방법 (신박한듯..)-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){
+                let answer=[];
+                let newArr = [...arr]
+                arr.sort((a,b) =>{
+                    return a-b
+                })//오름차순 sort를 우선 해주고.
+
+                //그 sort한 값이랑. 기존에 있던 arr의 값이랑 다르다면 현수또는 짝꿍.
+                //앞에 선사람이 현수. 뒤에선사람 짝꿍 answer에 그대로 순서대로 push
+                arr.forEach((item, index)=>{
+                    if(newArr[index] != item){
+                        answer.push(index+1)
+                    }
+                })
                 return answer
             }
            
