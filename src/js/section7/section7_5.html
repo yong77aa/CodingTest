@@ -1,0 +1,73 @@
+<!-- 삽입정렬로 풀기 -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(size, arr){
+                let answer=Array.from({length:size}, ()=>0);
+                arr.forEach((item, index) => {
+                    let pos = -1 //미스 -> answer에 item이 없는 상태, 히트 -> answer에 item이 있는 상태
+                    //일단 들어가 있는지 아닌지 부터 체크 하자.
+                    for(let i = 0 ; i< size; i++) if(item === answer[i]) pos = i // index 그 해당하는 index값 position에 넣기
+                    
+                    if(pos === -1){
+                        //미스 이면
+                        for(let i = size -1; i>=1 ; i--){ //맨 뒤에서 index가 1일때까지
+                            //뒤에서부터 한칸씩 앞으로 땡겨오기
+                            answer[i] = answer[i-1]
+                        }
+                    }else {
+                        for(let i = pos; i >=1 ; i--){ //pos에서 index가 1일때까지  ** i >= 1 부등호 방향 주의하기
+                            answer[i] = answer[i-1]
+                        }
+                    }
+                    answer[0] = item
+                })
+                return answer;
+            }
+          
+            let tempArr=[1, 2, 3, 2, 6, 2, 3, 5, 7];
+            console.log(solution(5, tempArr));
+        </script>
+    </body>
+</html>
+
+
+
+
+<!-- 내장 함수로 풀기 -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(size, arr){
+                let answer=Array.from({length:size}, ()=>0);
+                
+                arr.forEach((item, index) => {
+                    if(answer.includes(item)){
+                        //이미 가지고 있다면
+                        answer.splice(answer.indexOf(item), 1)
+                        answer.unshift(item)
+                    }else{
+                        console.log("없다 " + item)
+                        answer.unshift(item)
+                        if(answer.length > size) {
+                            answer.pop()
+                        }
+                    }
+                })
+                return answer;
+            }
+          
+            let arr=[1, 2, 3, 2, 6, 2, 3, 5, 7];
+            console.log(solution(5, arr));
+        </script>
+    </body>
+</html>
+

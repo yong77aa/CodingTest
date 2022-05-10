@@ -1,0 +1,28 @@
+<!-- 이분검색 개념 -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(target, arr){
+                let answer;
+                arr.sort((a,b) => a-b) //일단 오름차순으로 정렬 (이분탐색은 무조건 정렬 하고 시작)
+                let lt = 0; let rt = arr.length -1 //왼쪽인덱스, 오른쪽인덱스
+                while(lt <= rt){ // lt가 rt보다 작거나 같으면 !!! 커지면 멈춰야해.
+                    let mid = parseInt((lt+rt)/2) //가운데 값.
+                    if(arr[mid] === target){ //가운데 값이 찾던 값이면
+                        answer = mid + 1 //번째니까 +1
+                        break; //하고 더이상 볼필요 x
+                    }else if(arr[mid] > target) rt = mid -1 // 가운데 값이 target보다 크면 큰쪽에 있던 rt가 가운데 -1로 옮겨짐
+                    else lt = mid + 1 //작은데 있던 lt가 가운데 +1 로 옮겨짐
+                }
+                return answer;
+            }
+
+            let arr=[23, 87, 65, 12, 57, 32, 99, 81];
+            console.log(solution(32, arr));
+        </script>
+    </body>
+</html>
