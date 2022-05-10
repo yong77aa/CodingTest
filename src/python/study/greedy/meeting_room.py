@@ -1,6 +1,5 @@
-# 가장 먼저 끝나는 회의를 먼저 선택
-# 탐욕법
 # 백준알고리즘 https://www.acmicpc.net/problem/1931
+# 가장 먼저 끝나는 회의를 먼저 선택
 
 n = int(input())
 time = []

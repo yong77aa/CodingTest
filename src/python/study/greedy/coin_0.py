@@ -1,6 +1,5 @@
-# 당장 가장 큰 가치를 가진 동전으로 나누면 됨
-# 탐욕법
 # 백준알고리즘 https://www.acmicpc.net/problem/11047
+# 당장 가장 큰 가치를 가진 동전으로 나누면 됨
 
 n, k = map(int, input().split())
 coinList = []
