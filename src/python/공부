@@ -16,10 +16,6 @@ rstrip: 오른쪽 공백 제거
 lstrip: 왼쪽 공백 제거
 strip: 왼쪽 오른쪽 공백 제거
 
-* 리스트 for문 한줄에 작성
-[결과 for 반복문]
-ex) [list(stdin.readline()) for _ in range(n)]: 결과를 반복해 리스트 생성
-
 * 리스트 for문 인덱스와 값 한번에 접근하기
 for index, val in enumerate(arr):
 
@@ -39,6 +35,10 @@ range(a1, a2, a3) 인 경우
 a1: 시작범위 (0은 생략가능)
 a2: 마지막 범위 (지정된 숫자 바로 앞까지 실행)
 a3: 간격 (생략하면 기본 값 1)
+
+* 리스트 for문 한줄에 작성
+[결과 for 반복문]
+ex) [list(stdin.readline()) for _ in range(n)]: 결과를 반복해 리스트 생성
 
 * 빈 배열 만들기
 arr = [0 for _ in range(n)]: 일차원 배열
