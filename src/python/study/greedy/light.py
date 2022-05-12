@@ -7,7 +7,6 @@ def state_change(num):
         num = 1
     elif num == 1:
         num = 0
-
     return num
 
 
@@ -20,7 +19,6 @@ def solution(bulb, count):
 
     for i in range(1, n):
         if bulb[i-1] != target[i-1]:
-            print("_____ i: " + str(i))
             # 이전 값이 다름
             count += 1
             bulb[i-1] = state_change(bulb[i-1])
