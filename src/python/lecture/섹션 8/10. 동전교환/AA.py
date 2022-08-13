@@ -16,6 +16,3 @@ if __name__ == "__main__":
 
     print(dy[target])
 
-
-
-
